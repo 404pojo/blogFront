@@ -1,0 +1,42 @@
+.center{
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/////////////////////////
+
+.index{
+   height:100%; 
+   .imgBox{
+    position:fixed;
+    top:0;
+    z-index:0;
+    background-image: url('../assets/yay.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+   }
+   .main{
+       position:absolute;
+       z-index:1
+   }
+   .head{
+       position:fixed;
+       top:0;
+       z-index:2;
+       height:64px;
+       background-color: #fff;
+       width:100%;
+       .headCenter{
+            margin:0 auto;
+            padding:0 15px;   
+            .center();
+            .left{
+                display:flex;
+                height:64px;
+            }
+       }
+   }
+}
