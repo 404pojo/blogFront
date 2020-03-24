@@ -2,76 +2,16 @@ import React from 'react';
 import { connect } from 'dva';
 import sty from './indexPage.less'
 import NavList from '../components/navigator/navigatorUl'
-
+import MainSearch from '../components/mainSearch/mainSearch'
+import {
+  SearchOutlined 
+} from '@ant-design/icons';
 function IndexPage() {
   return (
     <div className={sty.index}>
-        <div className={sty.imgBox}></div>
+        {/* <div className={sty.imgBox}></div> */}
         <div className={sty.main}>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
-          fsfsf<br/>
+          <MainSearch/> 
         </div>
         <div className={sty.head}>
             <div className={sty.headCenter}>
@@ -81,7 +21,11 @@ function IndexPage() {
                       <NavList/>
                   </div>
                 </div>
-                <div className={sty.reght}></div>
+                <div style={{position:'relative'}}> 
+                  <input type='text' placeholder='搜索'/> 
+                  <i><SearchOutlined/></i>
+                </div>
+                
             </div>
         </div>
     </div>
