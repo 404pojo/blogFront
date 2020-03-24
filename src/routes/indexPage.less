@@ -8,19 +8,13 @@
 
 .index{
    height:100%; 
-   .imgBox{
-    position:fixed;
-    top:0;
-    z-index:0;
-    background-image: url('../assets/yay.jpg');
-    background-repeat:no-repeat;
-    background-size: cover;
-    height:100%;
-    width:100%;
-   }
    .main{
-       position:absolute;
-       z-index:1
+       position:relative;  
+       background: url('../assets/yay.jpg') no-repeat fixed;  
+       background-size:cover;
+       height:100%;
+       padding-bottom:1000px;
+       padding-top:64px;
    }
    .head{
        position:fixed;
@@ -35,7 +29,40 @@
             .center();
             .left{
                 display:flex;
-                height:64px;
+                height:63px;
+                &>p{
+                    height:100%;
+                    margin:0 20px 0 0;
+                    font:20px/64px 'Varela Round';
+                    color:#1BC3FB;
+                }
+            }
+            input{
+                width:248px;
+                height:40px;
+                font:16px/40px '';
+                color:#333;
+                background-color:#F4F4F4;
+                padding:0 0 0 36px;
+                box-shadow: none;
+                border-radius: 8px;
+                border:1px solid transparent;
+                &:hover{
+                    border:1px solid #1BC3FB;
+                    &+i{
+                        color:#1BC3FB;
+                    }
+                }
+            }
+            i{ 
+                width:36px;
+                height:100%;
+                top:0;
+                display:block;
+                position:absolute;
+                height:40px;
+                font:18px/40px '';
+                text-align: center;
             }
        }
    }
