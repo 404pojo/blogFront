@@ -8,7 +8,7 @@ class MainSearch extends React.Component{
         return(
             <div className={styles.mainSearch}>
                 <h1>404pojo</h1>
-                <div style={{position:'relative',width:'570px',margin:'0 auto'}}>  
+                <div style={{position:'relative',width:'570px',margin:'0 auto'}}> 
                   <input type='text' placeholder='搜索'/> 
                   <i><SearchOutlined/></i>
                 </div>

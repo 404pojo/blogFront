@@ -5,7 +5,7 @@ import {
     AppstoreAddOutlined,
     SettingOutlined ,
     PushpinOutlined ,
-    MessageOutlined,
+    MessageOutlined
   } from '@ant-design/icons';
 class NavigatorUl extends React.Component {
     
