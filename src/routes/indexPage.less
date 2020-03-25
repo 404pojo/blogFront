@@ -1,8 +1,8 @@
 .center{
-    width:80%;
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 /////////////////////////
 
@@ -12,8 +12,6 @@
        position:relative;  
        background: url('../assets/yay.jpg') no-repeat fixed;  
        background-size:cover;
-       height:100%;
-       padding-bottom:1000px;
        padding-top:64px;
    }
    .head{
@@ -36,6 +34,9 @@
                     font:20px/64px 'Varela Round';
                     color:#1BC3FB;
                 }
+                ul{
+                    width:48vw;
+                }
             }
             input{
                 width:248px;
@@ -49,8 +50,9 @@
                 border:1px solid transparent;
                 &:hover{
                     border:1px solid #1BC3FB;
+                    box-shadow: #1Bc3FB 0px 0px 5px;
                     &+i{
-                        color:#1BC3FB;
+                        color:#1BC3FB!important; 
                     }
                 }
             }

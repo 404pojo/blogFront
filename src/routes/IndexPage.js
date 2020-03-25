@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import sty from './indexPage.less'
 import NavList from '../components/navigator/navigatorUl'
 import MainSearch from '../components/mainSearch/mainSearch'
+import Content from './content/content'
 import {
   SearchOutlined 
 } from '@ant-design/icons';
@@ -11,14 +12,15 @@ function IndexPage() {
     <div className={sty.index}>
         {/* <div className={sty.imgBox}></div> */}
         <div className={sty.main}>
-          <MainSearch/> 
+          <MainSearch/>  
+          <Content/>
         </div>
         <div className={sty.head}>
-            <div className={sty.headCenter}>
+            <div className={sty.headCenter}> 
                 <div className={sty.left}>
                   <p>404pojo</p>
                   <div>
-                      <NavList/>
+                      <NavList/>  
                   </div>
                 </div>
                 <div style={{position:'relative'}}> 
@@ -27,7 +29,7 @@ function IndexPage() {
                 </div>
                 
             </div>
-        </div>
+        </div>       
     </div>
   );
 }
