@@ -18,7 +18,7 @@ function IndexPage() {
         <div className={sty.head}>
             <div className={sty.headCenter}> 
                 <div className={sty.left}>
-                  <p>404pojo</p>
+                  <p>江东汤某人</p>
                   <div>
                       <NavList/>  
                   </div>
