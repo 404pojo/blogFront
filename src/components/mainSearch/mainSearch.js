@@ -7,7 +7,7 @@ class MainSearch extends React.Component{
     render(){
         return(
             <div className={styles.mainSearch}>
-                <h1>404pojo</h1>
+                <h1>江东汤某人</h1>
                 <div style={{position:'relative',width:'570px',margin:'0 auto'}}> 
                   <input type='text' placeholder='搜索'/> 
                   <i><SearchOutlined/></i>

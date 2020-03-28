@@ -1,33 +1,17 @@
 import React from "react"
-import { Card, Avatar } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-
+import { Card } from 'antd';
 const { Meta } = Card;
 
 class Info extends React.Component {
-    render() {
+    render() { 
         return (
             <Card
-                style={{ width: 284 }}
-                cover={
-                    <img
-                        alt="example"
-                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                }
-                actions={[
-                    <SettingOutlined key="setting" />,
-                    <EditOutlined key="edit" />,
-                    <EllipsisOutlined key="ellipsis" />,
-                ]}
-                hoverable={true}
-            >
-                <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                    title="updraft"
-                    description="震惊,这个人竟然"
-                />
-            </Card>
+            hoverable
+            style={{ width: 284 }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+          >
+            <Meta title="太平府汤某人" description="不知所云" />
+          </Card>
         )
     }
 }
