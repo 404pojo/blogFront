@@ -5,8 +5,11 @@ import Info from '../../components/cards/info/info'
 import ArticleCategory from '../../components/cards/info/articleCategory/articleCategory'
 import UpIcon from '../../components/upToTop'
 import { Pagination } from 'antd';
+import {connect} from "dva"     
+
 class Content extends React.Component{
     render(){
+        console.log(this.props)
         return( 
             <div className={styles.contentBox}> 
                 <div className={styles.article}>
@@ -22,10 +25,16 @@ class Content extends React.Component{
                     <Info/>
                     <ArticleCategory/>
                 </div>
-                <UpIcon/> 
+                <UpIcon/>  
             </div>
         )
     }
 }
 
-export default Content
+Content.propTypes = {
+
+};
+
+export default connect(({index})=>(
+    {index}
+))(Content)
